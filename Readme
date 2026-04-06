@@ -1,0 +1,62 @@
+# Finance Backend System
+
+## 📌 Overview
+
+This project is a backend system for managing financial records with role-based access control.
+
+## 🚀 Features
+
+* User management (Admin, Analyst, Viewer)
+* Financial records CRUD
+* Dashboard analytics (income, expense, balance)
+* JWT Authentication
+* Role-Based Access Control (RBAC)
+
+## 🛠 Tech Stack
+
+* Node.js
+* Express.js
+* MongoDB
+* JWT
+
+## 🔐 Roles
+
+* Admin → Full access
+* Analyst → Read + analytics
+* Viewer → Read only
+
+## 📊 APIs
+
+### Auth
+
+POST /auth/login
+
+### Users
+
+POST /users
+GET /users
+
+### Records
+
+POST /records
+GET /records
+PUT /records/:id
+DELETE /records/:id
+
+### Dashboard
+
+GET /dashboard/income
+GET /dashboard/expense
+GET /dashboard/balance
+
+## ▶️ Run Project
+
+```bash
+npm install
+node server.js
+```
+
+## 📌 Notes
+
+* Authentication is done using JWT
+* Role-based access enforced using middleware
